@@ -14,6 +14,7 @@ namespace Katas.UniMod
     [DisallowMultipleComponent]
     public sealed class UniModContextInitializer : MonoBehaviour
     {
+        public static UniModContextInitializer Instance { get; private set; }
         [Header("Configuration")]
         [SerializeField] private string hostId = "com.company.name";
         [SerializeField] private string hostVersion = "0.1.0";
@@ -32,6 +33,7 @@ namespace Katas.UniMod
 
         private void Awake()
         {
+            Instance = this;
             InitializeContext();
         }
 
