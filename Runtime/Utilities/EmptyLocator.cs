@@ -17,5 +17,7 @@ namespace Katas.UniMod
 
         public string LocatorId => "__EmptyResourceLocator";
         public IEnumerable<object> Keys => Array.Empty<object>();
+
+        public IEnumerable<IResourceLocation> AllLocations => throw new NotImplementedException();
     }
 }

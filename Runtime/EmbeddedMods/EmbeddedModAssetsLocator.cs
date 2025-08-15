@@ -18,7 +18,9 @@ namespace Katas.UniMod
     {
         public string LocatorId { get; }
         public IEnumerable<object> Keys { get; }
-        
+
+        public IEnumerable<IResourceLocation> AllLocations => throw new NotImplementedException();
+
         private readonly Dictionary<object, List<IResourceLocation>> _locationsByKey;
         private readonly List<object> _keys;
         private readonly Dictionary<(object Key, Type Type), IList<IResourceLocation>> _locateCache;
