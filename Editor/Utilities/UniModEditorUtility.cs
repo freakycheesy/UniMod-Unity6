@@ -80,7 +80,7 @@ namespace Katas.UniMod.Editor
                 BuildTarget.PS4 => RuntimePlatform.PS4,
                 BuildTarget.PS5 => RuntimePlatform.PS5,
                 BuildTarget.StandaloneLinux64 => RuntimePlatform.LinuxPlayer,
-                BuildTarget.CloudRendering => RuntimePlatform.LinuxPlayer,
+                BuildTarget.LinuxHeadlessSimulation => RuntimePlatform.LinuxPlayer,
                 BuildTarget.StandaloneOSX => RuntimePlatform.OSXPlayer,
                 BuildTarget.StandaloneWindows => RuntimePlatform.WindowsPlayer,
                 BuildTarget.StandaloneWindows64 => RuntimePlatform.WindowsPlayer,
